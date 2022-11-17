@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: devops
+  name: svc-devops
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    name: http
+    targetPort: 8080
+  selector:
+    app: devops
