@@ -16,7 +16,7 @@ spec:
     spec:
       serviceAccount: sa-app
       containers:
-      - image: localhost:5000/devops:v7
+      - image: localhost:5000/devops:v8
         name: test
         ports:
         - containerPort: 8080
